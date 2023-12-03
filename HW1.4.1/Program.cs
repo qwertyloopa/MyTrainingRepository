@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             int a = 200;
-            while (a <= 200 && a>15 && a%17 == 0) 
+            while (a >= 200 && a<500 && a%17 == 0) 
             {
                 Console.Write($"{a},");
                 a += a;
