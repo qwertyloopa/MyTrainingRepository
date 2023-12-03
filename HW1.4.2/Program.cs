@@ -9,11 +9,11 @@
             switch(screenInput)
             {
                 case 'w':
-                    Console.Write($"..{screenSymbol}..");     
+                    Console.WriteLine($"..{screenSymbol}..");     
                 break;
 
                 case 'a':
-                    Console.Write($"{screenSymbol}..");
+                    Console.WriteLine($"{screenSymbol}..");
                 break;
 
                 case 's':
@@ -22,10 +22,11 @@
                 break;
 
                 case 'd':
-                    Console.Write($"..{screenSymbol}");
+                    Console.WriteLine($"..{screenSymbol}");
                 break;
-
             }
+
+            Console.ReadKey();
         }
     }
 }
