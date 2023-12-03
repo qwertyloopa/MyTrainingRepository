@@ -4,7 +4,28 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            char screenSymbol = 'v';
+            char screenInput = Char.Parse(Console.ReadLine());
+            switch(screenInput)
+            {
+                case 'w':
+                    Console.Write($"..{screenSymbol}..");     
+                break;
+
+                case 'a':
+                    Console.Write($"{screenSymbol}..");
+                break;
+
+                case 's':
+                    Console.WriteLine(' ');
+                    Console.WriteLine($"..{screenSymbol}..");
+                break;
+
+                case 'd':
+                    Console.Write($"..{screenSymbol}");
+                break;
+
+            }
         }
     }
 }
