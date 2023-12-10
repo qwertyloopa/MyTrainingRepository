@@ -18,7 +18,7 @@
             int[,] res = new int[2, 2];
             Addiction(matrix1, matrix2, res);
 
-            Console.WriteLine(res);
+            Console.WriteLine(string.Join(", ", res));
         }
 
         static int[,] Addiction(int[,] a, int[,] b, int[,] c)
