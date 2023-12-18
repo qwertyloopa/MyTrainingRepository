@@ -21,10 +21,10 @@
             int indexToRemove = 1;
             Item removedItem = bag.RemoveItem(indexToRemove);
 
-            bag.Close(); // Закрытие сумки
+            bag.Close();
 
             
-            bag.AddItem(new Item().SetName("Gold")); // Не добавится, так как сумка закрыта
+            bag.AddItem(new Item().SetName("Gold"));
 
             Console.WriteLine($"Удаленный предмет: {removedItem.GetName}");
         }
