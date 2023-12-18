@@ -14,7 +14,7 @@ namespace HW1._8._2
             Engine.CarEngine electro = new Engine.CarEngine();
             Engine.PlaneEngine reactive = new Engine.PlaneEngine();
             Car car = new Car(electro);
-
+            Plane plane = new Plane(reactive);
         }
     }
 }
