@@ -7,9 +7,12 @@
             Bag bag = new Bag();
             bag.Open();
 
-            Item item1 = new Item("Книга");
-            Item item2 = new Item("Ключ");
-            Item item3 = new Item("Зелье");
+            Item item1 = new Item();
+            item1.SetName("Зелье");
+            Item item2 = new Item();
+            item2.SetName("Ключ");
+            Item item3 = new Item();
+            item3.SetName("Меч");
 
             bag.AddItem(item1);
             bag.AddItem(item2);
@@ -20,7 +23,8 @@
 
             bag.Close(); // Закрытие сумки
 
-            bag.AddItem(new Item("Карта")); // Не добавится, так как сумка закрыта
+            
+            bag.AddItem(new Item().SetName("Gold")); // Не добавится, так как сумка закрыта
 
             Console.WriteLine($"Удаленный предмет: {removedItem.GetName}");
         }
@@ -82,7 +86,7 @@
                         if (items[i] == null)
                         {
                             items[i] = item;
-                            Console.WriteLine($"Предмет '{item.GetName}' добавлен в сумку.");
+                            Console.WriteLine($"Предмет '{item.SetName}' добавлен в сумку.");
                             break;
                         }
                     }
