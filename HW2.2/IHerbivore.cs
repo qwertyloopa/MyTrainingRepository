@@ -11,6 +11,6 @@ namespace HW2._2
         string typeH { get; set; }
         string foodH { get; set; }
 
-        public void DisplayEatH() => Console.WriteLine(foodH);
+        public void DisplayEatH();
     }
 }
