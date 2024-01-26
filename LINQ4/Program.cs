@@ -13,15 +13,10 @@
             trainings.Add(new FitnessCenter(2004, 12, 2, 1337));
             trainings.Add(new FitnessCenter(2008, 6, 2, 1337));
             trainings.Add(new FitnessCenter(2004, 7, 2, 1337));
-            Console.WriteLine("Я еблан и это не обсуждается");
             
-            List<FitnessCenter> fitnesses = new List<FitnessCenter>();
-            foreach(FitnessCenter fitness in trainings)
-            {
-                var result = trainings.OrderByDescending(x => x.duration).ThenByDescending(x => x.year).FirstOrDefault();
-                fitnesses.Add(new FitnessCenter(result.year, result.month, result.duration, result.clientCode));
-                Console.WriteLine($"{result.year}, {result.month}, {result.duration}, {result.clientCode}");
-            }
+         
+                var result = trainings.GroupBy(x => x.year).Select(g => new { year = g.Key, totalDuration = g.Sum(x => x.duration) }).OrderByDescending(x => x.totalDuration).First();
+                Console.WriteLine($"Год по продолжительности {result.year}, Суммарная продолжительность: {result.totalDuration}");            
         }
     }
 }
