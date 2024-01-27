@@ -15,8 +15,8 @@
             trainings.Add(new FitnessCenter(2004, 7, 2, 1337));
             
          
-                var result = trainings.GroupBy(x => x.year).Select(g => new { year = g.Key, totalDuration = g.Sum(x => x.duration) }).OrderByDescending(x => x.totalDuration).First();
-                Console.WriteLine($"Год по продолжительности {result.year}, Суммарная продолжительность: {result.totalDuration}");            
+            var result = trainings.GroupBy(x => x.year).Select(g => new { year = g.Key, totalDuration = g.Sum(x => x.duration) }).OrderByDescending(x => x.totalDuration).First();
+            Console.WriteLine($"Год по продолжительности {result.year}, Суммарная продолжительность: {result.totalDuration}");            
         }
     }
 }
