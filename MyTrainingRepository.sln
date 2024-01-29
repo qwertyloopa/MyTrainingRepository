@@ -49,7 +49,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ5", "LINQ5\LINQ5.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Files1", "Files1\Files1.csproj", "{D97C7E3C-0AB7-4CBC-9FE4-0A04CFEFF747}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files2", "Files2\Files2.csproj", "{6FAE079C-E7A1-4911-AE2E-0D31413B01EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Files2", "Files2\Files2.csproj", "{6FAE079C-E7A1-4911-AE2E-0D31413B01EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Files3", "Files3\Files3.csproj", "{36655B20-A216-427A-A564-8B18BD661A0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files4(JSON)", "Files4(JSON)\Files4(JSON).csproj", "{997BBE41-BA3B-4F7E-BDBA-8B17317DE94D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +157,14 @@ Global
 		{6FAE079C-E7A1-4911-AE2E-0D31413B01EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FAE079C-E7A1-4911-AE2E-0D31413B01EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FAE079C-E7A1-4911-AE2E-0D31413B01EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36655B20-A216-427A-A564-8B18BD661A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36655B20-A216-427A-A564-8B18BD661A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36655B20-A216-427A-A564-8B18BD661A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36655B20-A216-427A-A564-8B18BD661A0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{997BBE41-BA3B-4F7E-BDBA-8B17317DE94D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{997BBE41-BA3B-4F7E-BDBA-8B17317DE94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{997BBE41-BA3B-4F7E-BDBA-8B17317DE94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{997BBE41-BA3B-4F7E-BDBA-8B17317DE94D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
