@@ -55,7 +55,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Files3", "Files3\Files3.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Files4(JSON)", "Files4(JSON)\Files4(JSON).csproj", "{997BBE41-BA3B-4F7E-BDBA-8B17317DE94D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads1", "Threads1\Threads1.csproj", "{EABDF4C3-7CA8-4551-854D-6B6E63AAD1F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Threads1", "Threads1\Threads1.csproj", "{EABDF4C3-7CA8-4551-854D-6B6E63AAD1F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads2", "Thread2\Threads2.csproj", "{37565E68-BBA8-4F65-84CF-0B3ED0DA44D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +173,10 @@ Global
 		{EABDF4C3-7CA8-4551-854D-6B6E63AAD1F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EABDF4C3-7CA8-4551-854D-6B6E63AAD1F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EABDF4C3-7CA8-4551-854D-6B6E63AAD1F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37565E68-BBA8-4F65-84CF-0B3ED0DA44D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37565E68-BBA8-4F65-84CF-0B3ED0DA44D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37565E68-BBA8-4F65-84CF-0B3ED0DA44D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37565E68-BBA8-4F65-84CF-0B3ED0DA44D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
