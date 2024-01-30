@@ -45,7 +45,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ2", "LINQ2\LINQ2.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ4", "LINQ4\LINQ4.csproj", "{645969D0-C641-45E1-85EE-9D2BE887D45E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ5", "LINQ5\LINQ5.csproj", "{F01BBB8C-0A2A-4600-BD2A-C401F6FC98C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ5", "LINQ5\LINQ5.csproj", "{F01BBB8C-0A2A-4600-BD2A-C401F6FC98C2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Files1", "Files1\Files1.csproj", "{D97C7E3C-0AB7-4CBC-9FE4-0A04CFEFF747}"
 EndProject
@@ -60,6 +60,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads2", "Thread2\Threads2.csproj", "{37565E68-BBA8-4F65-84CF-0B3ED0DA44D5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads3", "Threads3\Threads3.csproj", "{C495E97C-FD78-4682-A3FF-89ACF38226C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads4", "Threads4\Threads4.csproj", "{A391BDED-3986-40B2-B512-50A120E0F498}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -183,6 +185,10 @@ Global
 		{C495E97C-FD78-4682-A3FF-89ACF38226C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C495E97C-FD78-4682-A3FF-89ACF38226C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C495E97C-FD78-4682-A3FF-89ACF38226C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A391BDED-3986-40B2-B512-50A120E0F498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A391BDED-3986-40B2-B512-50A120E0F498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A391BDED-3986-40B2-B512-50A120E0F498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A391BDED-3986-40B2-B512-50A120E0F498}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
