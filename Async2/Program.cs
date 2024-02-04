@@ -7,31 +7,26 @@ namespace Async2
 
     internal class Program
     {
-        public static int time;
         static void Main(string[] args)
         {
             Console.WriteLine("Введите число");
-            time = Int32.Parse(Console.ReadLine());
-            Callback();
+            int time = Int32.Parse(Console.ReadLine());
+            Callback(time);
             Console.WriteLine("Квадрат данного числа равен: {0}", time^2);
             Console.ReadKey();
         }
         
-        static async void Callback()
+        static void Callback(int time)
         {
             Task taskMain = Task.Run(() => { 
                 for (int i = 0; i < time; i++) 
                 { 
-                    Console.WriteLine("Hello from callback");
+                    Console.WriteLine($"{i} итерация объекта");
                 }
             });
             
             var awaiter = taskMain.GetAwaiter();
-            
-            awaiter.IsCompleted(()=>
-            {
-                Console.WriteLine("");
-            });
+            awaiter.OnCompleted(()=>Console.WriteLine("Hello from callback"));
         }
     }
 }
