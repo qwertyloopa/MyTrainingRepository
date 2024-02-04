@@ -2,10 +2,11 @@
 using System.Threading;
 using System.Threading.Tasks;
 
+
 namespace Async2
 {
 
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -26,7 +27,11 @@ namespace Async2
             });
             
             var awaiter = taskMain.GetAwaiter();
-            awaiter.OnCompleted(()=>Console.WriteLine("Hello from callback"));
+            awaiter.OnCompleted(()=>{
+                Console.WriteLine("Hello from callback");
+                Console.WriteLine("Переходим к ContinueWith");
+                ContinueWith.Start();
+        });
         }
     }
 }
