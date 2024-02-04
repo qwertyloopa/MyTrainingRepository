@@ -63,6 +63,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads3", "Threads3\Thread
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads4", "Threads4\Threads4.csproj", "{A391BDED-3986-40B2-B512-50A120E0F498}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async1", "Async1\Async1.csproj", "{3B67FFE4-87D2-4085-BF2C-FF451FF7549C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async2", "Async2\Async2.csproj", "{484FDAAF-857B-4EDE-9E74-22D97578AEF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +193,14 @@ Global
 		{A391BDED-3986-40B2-B512-50A120E0F498}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A391BDED-3986-40B2-B512-50A120E0F498}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A391BDED-3986-40B2-B512-50A120E0F498}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B67FFE4-87D2-4085-BF2C-FF451FF7549C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B67FFE4-87D2-4085-BF2C-FF451FF7549C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B67FFE4-87D2-4085-BF2C-FF451FF7549C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B67FFE4-87D2-4085-BF2C-FF451FF7549C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{484FDAAF-857B-4EDE-9E74-22D97578AEF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{484FDAAF-857B-4EDE-9E74-22D97578AEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{484FDAAF-857B-4EDE-9E74-22D97578AEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{484FDAAF-857B-4EDE-9E74-22D97578AEF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
