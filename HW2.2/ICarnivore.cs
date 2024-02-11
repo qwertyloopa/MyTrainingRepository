@@ -8,8 +8,8 @@ namespace HW2._2
 {
     internal interface ICarnivore
     {
-        public abstract string typeC { get; set; }
-        public abstract string foodC { get; set; }
+        public string typeC { get; set; }
+        public string foodC { get; set; }
 
         public void DisplayEatC();
     }

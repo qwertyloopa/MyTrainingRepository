@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Panda josh = new Panda("josh");
+            Panda fransis = new Panda("fransis");
+            Console.WriteLine(josh.ToString);
+            Console.WriteLine(fransis.ToString);
+
+            var result = josh - fransis;
+            Console.WriteLine(result.ToString);
         }
     }
 }

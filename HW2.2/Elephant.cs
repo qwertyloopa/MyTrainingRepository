@@ -24,5 +24,10 @@ namespace HW2._2
         {
             Console.WriteLine("I'm an Elephant");
         }
+
+        public void DisplayEatH()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
