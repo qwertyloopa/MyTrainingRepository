@@ -71,6 +71,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async3(Pizza)", "Async3(Piz
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW1.9.1", "HW1.9.1\HW1.9.1.csproj", "{C997B2F5-5A12-4AA0-B7D9-FEEA90D47772}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW2.3.3", "HW2.3.3\HW2.3.3.csproj", "{5912658D-6583-452A-AC00-1CCC1C657702}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -213,6 +215,10 @@ Global
 		{C997B2F5-5A12-4AA0-B7D9-FEEA90D47772}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C997B2F5-5A12-4AA0-B7D9-FEEA90D47772}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C997B2F5-5A12-4AA0-B7D9-FEEA90D47772}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5912658D-6583-452A-AC00-1CCC1C657702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5912658D-6583-452A-AC00-1CCC1C657702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5912658D-6583-452A-AC00-1CCC1C657702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5912658D-6583-452A-AC00-1CCC1C657702}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
