@@ -36,7 +36,7 @@ namespace HW1._9._1
             Console.WriteLine("I'm Carnivore! ");
         }
 
-        void EatMeat()
+        public void EatMeat()
         {
             Console.WriteLine("Mmmmm, beef!1");
         }

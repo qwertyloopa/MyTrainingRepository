@@ -8,9 +8,9 @@ namespace HW2._2
 {
     internal abstract class Animal
     {
-        string Name { get; set; }
+        public string Name { get; set; }
 
-        int numOfLegs { get; set; }
+        public int numberOfLegs { get; set; }
 
         void SetName(string name)
         {
@@ -22,9 +22,9 @@ namespace HW2._2
             return this.Name;
         }
 
-        public void getNumOfLegs()
+        public int getNumOfLegs()
         {
-            Console.WriteLine(numOfLegs);
+            return this.numberOfLegs;
         }
 
         public abstract void displayAnimal();
