@@ -8,10 +8,19 @@ namespace HW2._2
 {
     internal abstract class Animal
     {
-        public string Name { get; set; }
+        
+    public string Name { get; private set; }
 
-        public int numberOfLegs { get; set; }
+    public int NumOfLegs { get; private set; }
 
+
+    public Animal(string name, int numOfLegs)
+    {
+        Name = name;
+        NumOfLegs = numOfLegs;
+    }
+
+    public abstract void DisplayAnimal();
         void SetName(string name)
         {
             this.Name = name;
@@ -24,9 +33,8 @@ namespace HW2._2
 
         public int getNumOfLegs()
         {
-            return this.numberOfLegs;
+            return NumOfLegs;
         }
 
-        public abstract void displayAnimal();
     }
 }

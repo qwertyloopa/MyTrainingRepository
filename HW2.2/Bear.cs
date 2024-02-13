@@ -1,33 +1,31 @@
 ﻿namespace HW2._2
 {
-    internal class Bear : Animal, ICarnivore, IHerbivore
+    class Bear : Animal, ICarnivore, IHerbivore
     {
-        string sound { get; set; }
-        string color { get; set; }
+        public string Sound { get; set; }
+        public string Colour { get; set; }
+        public string Type { get; set; }
+        public string Food { get; set; }
 
-        public Bear(string sound, string color)
-        {
-            this.sound = sound;
-            this.color = color;
-        }
-        public string typeH { get ; set; }
-        public string foodH { get; set; }
-        public string typeC { get; set; }
-        public string foodC { get; set; }
 
-        public override void displayAnimal()
+        public Bear(string name, int numOfLegs, string sound, string colour, string carnivoreType, string herbivoreType, string carnivoreFood, string herbivoreFood) : base(name, numOfLegs)
         {
-            throw new NotImplementedException();
+            Sound = sound;
+            Colour = colour;
+            (this as ICarnivore).Type = carnivoreType;
+            (this as IHerbivore).Type= herbivoreType;
+            (this as ICarnivore).Food = carnivoreFood;
+            (this as IHerbivore).Type = herbivoreFood;
         }
 
-        public void DisplayEatC()
+        public override void DisplayAnimal()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Name: {Name}, NumOfLegs: {NumOfLegs}, Sound: {Sound}, Colour: {Colour}, CarnivoreType: {(this as ICarnivore).Type}, HerbivoreType: {(this as IHerbivore).Type}");
         }
 
-        public void DisplayEatH()
+        public void DisplayEat()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{Name} eats {Food}");
         }
     }
 }

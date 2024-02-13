@@ -8,31 +8,27 @@ namespace HW2._2
 {
     internal class Cat : Animal, ICarnivore
     {
-        string typeC = "Carnivore";
-        string Sound = "Meow";
-        string colour { get; set; }
-        string ICarnivore.typeC { get; set; }
-        string ICarnivore.foodC { get; set; }
+        public string Sound { get; set; }
+        public string Colour { get; set; }
+        public string Type { get; set; }
+        public string Food { get; set; }
 
-
-        public Cat(string name, int numOfLegs, string sound, string color, string type)
+        public Cat(string name, int numOfLegs, string sound, string colour, string type, string food) : base(name, numOfLegs)
         {
-            Name = name;
-            numberOfLegs = numOfLegs;
             Sound = sound;
-            colour = color;
-            type = typeC;
+            Colour = colour;
+            Type = type;
+            Food = food;
         }
 
-        public override void displayAnimal()
+        public override void DisplayAnimal()
         {
-            Console.WriteLine($"Name: {Name}, NumOfLegs: {numberOfLegs}, Sound: {Sound}, Colour: {colour}, Type: {typeC}");
+            Console.WriteLine($"Name: {Name}, NumOfLegs: {NumOfLegs}, Sound: {Sound}, Colour: {Colour}, Type: {Type}, Food: {Food}");
         }
 
-        public void DisplayEatC()
+        public void DisplayEat()
         {
-            Console.WriteLine($"{Name} eats meat");
+            Console.WriteLine($"{Name} eats {Food}");
         }
-
     }
 }

@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace HW2._2
 {
-    internal interface ICarnivore
+    interface ICarnivore
     {
-        public string typeC { get; set; }
-        public string foodC { get; set; }
+        public string Type { get; set; }
+        public string Food { get; set; }
 
-        public void DisplayEatC();
+        void DisplayAnimal();
+
+        public void DisplayEat();
     }
 }
