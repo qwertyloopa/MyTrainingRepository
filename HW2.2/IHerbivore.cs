@@ -8,9 +8,10 @@ namespace HW2._2
 {
     internal interface IHerbivore
     {
-        string typeH { get; set; }
-        string foodH { get; set; }
+        public string Type { get; set; }
+        public string Food { get; set; }
 
-        public void DisplayEatH();
+        void DisplayAnimal();
+        public void DisplayEat();
     }
 }

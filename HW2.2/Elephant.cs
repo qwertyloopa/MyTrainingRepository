@@ -8,21 +8,27 @@ namespace HW2._2
 {
     internal class Elephant : Animal, IHerbivore
     {
-        string Sound;
-        string Color;
-        public string typeH { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string foodH { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Sound { get; set; }
+        public string Colour { get; set; }
+        public string Type { get; set; }
+        public string Food { get; set; }
 
-
-        public Elephant(string sound, string color)
+        public Elephant(string name, int numOfLegs, string sound, string colour, string type, string food) : base(name, numOfLegs)
         {
-            Color = color;
             Sound = sound;
+            Colour = colour;
+            Type = type;
+            Food = food;
         }
 
-        public override void displayAnimal()
+        public override void DisplayAnimal()
         {
-            Console.WriteLine("I'm an Elephant");
+            Console.WriteLine($"Name: {Name}, NumOfLegs: {NumOfLegs}, Sound: {Sound}, Colour: {Colour}, Type: {Type}, Food: {Food}");
+        }
+
+        public void DisplayEat()
+        {
+            Console.WriteLine($"{Name} eats {Food}");
         }
     }
 }

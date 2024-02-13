@@ -6,7 +6,7 @@ namespace Files3
     internal class Program
     {
 
-        static void Main(string[] args)
+        static async void Main(string[] args)
         {
             read();
         }

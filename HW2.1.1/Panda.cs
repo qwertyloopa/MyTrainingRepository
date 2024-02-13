@@ -9,32 +9,34 @@ namespace HW2._1._1
     class Panda
     {
         Random rnd = new Random();
-        public string Name { get; set; }
-        public int HP { get; set; }
-        public int Defence { get; set; }
-        public int Attack { get; set; }
-        Gender Gen { get; set; }
-        Color Col { get; set; }
+        public string? name { get; set; }
+        public int hp { get; set; }
+        public int defence { get; set; }
+        public decimal weight { get; set; }
+        public int attack { get; set; }
+        Gender gen { get; set; }
+        Color col { get; set; }
 
-        public Panda(string Name, Color color)
+        public Panda(string name)
         {
             int genderRandom = rnd.Next(1, 2);
             int colorRandom = rnd.Next(1, 3);
-            this.Name = Name;
-            HP = rnd.Next(20, 40);
-            Defence = rnd.Next(5, 10);
-            Attack = rnd.Next(5, 10);
-            Gen = (Gender)genderRandom;
-            Col = (Color)colorRandom;
+            this.name = name;
+            this.hp = rnd.Next(20, 40);
+            this.defence = rnd.Next(5, 10);
+            this.attack = rnd.Next(5, 10);
+            this.gen = (Gender)genderRandom;
+            this.col = (Color)colorRandom;
         }
 
 
 
         public static Panda operator +(Panda p1, Panda p2)
         {
-            if (p1.Gen != p2.Gen)
+            if (p1.gen != p2.gen)
             {
-                return new Panda { Name = Console.ReadLine(), HP = p1.HP, Defence = p2.Defence, Attack = p2.Attack };
+                Console.WriteLine("Вы застали рождение новой панды, придумайте ей имя");
+                return new Panda(Console.ReadLine());
             }
             else
             {
@@ -44,18 +46,30 @@ namespace HW2._1._1
 
         public static Panda operator -(Panda p1, Panda p2)
         {
-            if (p1.Attack < p2.Attack)
+            if (p1.attack < p2.attack)
             {
-                p1.HP -= p2.Attack;
+                p1.hp -= p2.attack;
+                return p1;
             }
-            else if (p1.Attack > p2.Attack)
+            else if (p1.attack > p2.attack)
             {
-                p2.HP -= p1.Attack;
+                p2.hp -= p1.attack;
+                return p2;
             }
-            else
+            else if(p2.hp == 1 | p1.hp == 1)
             {
+                return null;
+            }
+            else 
+            {
+                return null;
+            }
+        }
 
-            }
+        public override string ToString()
+        {
+            string result = $"{this.name}, {this.hp}, {this.gen}";
+            return result;
         }
     }
 
